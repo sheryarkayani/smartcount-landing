@@ -19,7 +19,7 @@ interface FeatureProps {
 
 const Feature = ({ icon, title, description }: FeatureProps) => {
   return (
-    <div className="flex flex-col p-6 rounded-xl hover:shadow-md transition-all duration-300 hover:bg-accent/50">
+    <div className="flex flex-col p-6 rounded-2xl hover:shadow-sm transition-all duration-300 hover:bg-accent/40">
       <div className="flex items-center justify-center w-12 h-12 rounded-full bg-primary/10 text-primary mb-5">
         {icon}
       </div>
@@ -60,14 +60,11 @@ const Features = () => {
     <section id="features" className="py-20 bg-background">
       <div className="section-container">
         <div className="text-center max-w-3xl mx-auto mb-16">
-          <span className="inline-block px-3 py-1 rounded-full bg-primary/10 text-primary text-sm font-medium mb-6">
-            Powerful Features
-          </span>
           <h2 className="text-3xl md:text-4xl font-semibold mb-6">
-            Intelligent accounting that works for you
+            Designed to work.<br />The way you do.
           </h2>
           <p className="text-muted-foreground text-lg">
-            SmartLedger combines cutting-edge AI technology with accounting expertise to create a system that anticipates your needs and automates complex tasks.
+            SmartLedger combines refined simplicity with accounting intelligence to anticipate your needs and streamline your financial workflow.
           </p>
         </div>
         
