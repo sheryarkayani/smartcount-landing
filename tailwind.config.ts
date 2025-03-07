@@ -104,6 +104,10 @@ export default {
 				'pulse-subtle': {
 					'0%, 100%': { opacity: '1' },
 					'50%': { opacity: '0.85' }
+				},
+				'wave': {
+					'0%, 100%': { transform: 'scaleY(1)' },
+					'50%': { transform: 'scaleY(0.3)' }
 				}
 			},
 			animation: {
@@ -114,11 +118,17 @@ export default {
 				'slide-in': 'slide-in 0.6s ease-out forwards',
 				'scale-in': 'scale-in 0.4s ease-out forwards',
 				'float': 'float 3s ease-in-out infinite',
-				'pulse-subtle': 'pulse-subtle 3s ease-in-out infinite'
+				'pulse-subtle': 'pulse-subtle 3s ease-in-out infinite',
+				'wave': 'wave 1.5s ease-in-out infinite'
 			},
 			backdropFilter: {
 				'none': 'none',
 				'blur': 'blur(20px)'
+			},
+			animationDelay: {
+				'150': '150ms',
+				'300': '300ms',
+				'450': '450ms'
 			}
 		}
 	},

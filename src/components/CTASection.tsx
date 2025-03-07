@@ -1,7 +1,7 @@
 
 import { useRef, useEffect } from 'react';
 import { Button } from '@/components/ui/button';
-import { ArrowRight, Check } from 'lucide-react';
+import { ArrowRight, Check, Zap, Activity, Building } from 'lucide-react';
 
 const CTASection = () => {
   const sectionRef = useRef<HTMLDivElement>(null);
@@ -31,60 +31,66 @@ const CTASection = () => {
   }, []);
   
   return (
-    <section id="pricing" className="py-20 bg-accent/50">
+    <section id="pricing" className="py-20 bg-gradient-to-br from-violet-50 via-accent/5 to-background">
       <div className="section-container">
         <div ref={sectionRef}>
           <div className="text-center max-w-3xl mx-auto mb-12">
-            <span className="inline-block px-3 py-1 rounded-full bg-primary/10 text-primary text-sm font-medium mb-6">
-              Choose Your Plan
+            <span className="inline-block px-3 py-1 rounded-full bg-violet-100 text-violet-600 text-sm font-medium mb-6">
+              Flexible Plans
             </span>
-            <h2 className="text-3xl md:text-4xl font-semibold mb-6">
-              Accounting that fits your business perfectly
+            <h2 className="text-3xl md:text-4xl font-bold mb-6">
+              Find your perfect <span className="text-transparent bg-clip-text bg-gradient-to-r from-violet-600 to-indigo-600">rhythm</span>
             </h2>
             <p className="text-muted-foreground text-lg">
-              Simple, transparent pricing that scales with your needs. No hidden fees, no surprises.
+              Choose the plan that keeps your finances in perfect sync. Scale smoothly as you grow.
             </p>
           </div>
           
           <div className="grid grid-cols-1 md:grid-cols-3 gap-8">
             {[
               {
-                name: "Essential",
+                name: "Starter",
                 price: "$29",
-                description: "Everything you need to get started",
+                icon: <Activity className="h-5 w-5" />,
+                description: "Perfect tempo for small businesses",
                 features: [
-                  "Intelligent transaction categorization",
-                  "Essential financial reports",
-                  "Connect 2 financial accounts",
-                  "24/7 email support"
+                  "Real-time transaction monitoring",
+                  "Smart financial insights",
+                  "Connect 3 financial accounts",
+                  "24/7 email support",
+                  "Basic financial forecasting"
                 ]
               },
               {
-                name: "Professional",
+                name: "Growth",
                 price: "$79",
-                description: "Advanced features for growing businesses",
+                icon: <Zap className="h-5 w-5" />,
+                description: "Amplify your financial performance",
                 featured: true,
                 features: [
-                  "Everything in Essential, plus:",
-                  "Advanced financial insights",
-                  "Tax optimization intelligence",
+                  "Everything in Starter, plus:",
+                  "Advanced AI-powered insights",
+                  "Cash flow optimization",
                   "Connect up to 10 accounts",
                   "Priority support",
-                  "Custom reporting tools"
+                  "Custom financial dashboards",
+                  "Team collaboration tools"
                 ]
               },
               {
-                name: "Business",
+                name: "Enterprise",
                 price: "$199",
-                description: "Complete solution for established companies",
+                icon: <Building className="h-5 w-5" />,
+                description: "Ultimate control for large organizations",
                 features: [
-                  "Everything in Professional, plus:",
-                  "Dedicated account specialist",
-                  "API access for custom integration",
+                  "Everything in Growth, plus:",
+                  "Dedicated financial advisor",
+                  "Custom API integration",
                   "Unlimited accounts",
-                  "Custom workflows",
-                  "Advanced forecasting",
-                  "Team collaboration"
+                  "Advanced automation",
+                  "Predictive analytics",
+                  "Enterprise-grade security",
+                  "Custom training sessions"
                 ]
               }
             ].map((plan, index) => (
@@ -98,7 +104,15 @@ const CTASection = () => {
                   }
                 `}
               >
-                <h3 className="text-2xl font-semibold mb-2">{plan.name}</h3>
+                <div className="flex items-center gap-2 mb-2">
+                  <div className={`
+                    p-2 rounded-lg
+                    ${plan.featured ? 'bg-primary-foreground/20' : 'bg-violet-100'}
+                  `}>
+                    {plan.icon}
+                  </div>
+                  <h3 className="text-2xl font-bold">{plan.name}</h3>
+                </div>
                 <div className="flex items-baseline mb-6">
                   <span className="text-3xl font-bold">{plan.price}</span>
                   <span className="text-sm ml-1">/month</span>
@@ -131,8 +145,8 @@ const CTASection = () => {
                   className={`
                     w-full group
                     ${plan.featured 
-                      ? 'bg-primary-foreground text-primary hover:bg-primary-foreground/90' 
-                      : 'bg-primary text-white hover:bg-primary/90'
+                      ? 'bg-primary-foreground text-violet-600 hover:bg-primary-foreground/90' 
+                      : 'bg-violet-600 text-white hover:bg-violet-700'
                     }
                   `}
                 >
@@ -144,7 +158,7 @@ const CTASection = () => {
           </div>
           
           <div className="mt-12 text-center">
-            <p className="text-muted-foreground">Need a custom solution? <a href="#" className="text-primary hover:underline">Contact our team</a></p>
+            <p className="text-muted-foreground">Need a custom solution? <a href="#" className="text-violet-600 hover:underline font-medium">Let's talk</a></p>
           </div>
         </div>
       </div>

@@ -13,23 +13,23 @@ interface TestimonialProps {
 
 const testimonials: TestimonialProps[] = [
   {
-    content: "SmartLedger transformed our financial workflow completely. What used to take days now happens in minutes, with insights we never thought possible.",
+    content: "Pulse has revolutionized how we monitor our finances. The real-time insights and predictive analytics have given us unprecedented control over our cash flow.",
     author: "Sarah Johnson",
     position: "CFO",
     company: "Novus Technologies",
     imageUrl: "https://randomuser.me/api/portraits/women/23.jpg"
   },
   {
-    content: "The simplicity is deceptive. Behind the beautiful interface is incredible power that has completely changed how I understand my company's finances.",
+    content: "The speed and accuracy of Pulse is mind-blowing. It's like having a financial radar that spots opportunities and risks before they even materialize.",
     author: "Michael Chen",
-    position: "Founder",
+    position: "Founder & CEO",
     company: "Brite Solutions",
     imageUrl: "https://randomuser.me/api/portraits/men/54.jpg"
   },
   {
-    content: "I've never seen anything like it. SmartLedger's predictive capabilities are almost uncanny in their accuracy, helping us navigate financial decisions with confidence.",
+    content: "Pulse keeps our entire finance team in perfect sync. The real-time monitoring and AI insights have transformed our decision-making process completely.",
     author: "Emily Rodriguez",
-    position: "Director of Finance",
+    position: "Head of Finance",
     company: "Altura Partners",
     imageUrl: "https://randomuser.me/api/portraits/women/45.jpg"
   }
@@ -37,10 +37,10 @@ const testimonials: TestimonialProps[] = [
 
 const Testimonial = ({ content, author, position, company, imageUrl }: TestimonialProps) => {
   return (
-    <div className="glass-card p-8 rounded-xl flex flex-col h-full">
+    <div className="glass-card p-8 rounded-xl flex flex-col h-full hover:shadow-lg transition-all duration-300 group">
       <div className="flex mb-6">
         {[1, 2, 3, 4, 5].map((star) => (
-          <Star key={star} className="w-5 h-5 text-yellow-400 fill-yellow-400" />
+          <Star key={star} className="w-5 h-5 text-violet-400 fill-violet-400 group-hover:scale-110 transition-transform" style={{ transitionDelay: `${star * 50}ms` }} />
         ))}
       </div>
       <p className="text-lg flex-grow mb-6">{content}</p>
@@ -103,14 +103,14 @@ const Testimonials = () => {
       <div className="section-container" ref={sectionRef}>
         <div className="flex flex-col md:flex-row justify-between items-start md:items-end mb-12">
           <div className="max-w-2xl mb-6 md:mb-0">
-            <span className="inline-block px-3 py-1 rounded-full bg-primary/10 text-primary text-sm font-medium mb-6">
-              What People Are Saying
+            <span className="inline-block px-3 py-1 rounded-full bg-violet-100 text-violet-600 text-sm font-medium mb-6">
+              Success Stories
             </span>
-            <h2 className="text-3xl md:text-4xl font-semibold mb-4">
-              Loved by businesses everywhere
+            <h2 className="text-3xl md:text-4xl font-bold mb-4">
+              Feel the impact of <span className="text-transparent bg-clip-text bg-gradient-to-r from-violet-600 to-indigo-600">real-time finance</span>
             </h2>
             <p className="text-muted-foreground text-lg">
-              Discover how SmartLedger is changing the way companies understand and interact with their finances.
+              See how Pulse is helping businesses stay ahead with lightning-fast insights and intelligent financial monitoring.
             </p>
           </div>
           
@@ -150,10 +150,10 @@ const Testimonials = () => {
         </div>
 
         <div className="mt-12 text-center">
-          <p className="text-lg text-muted-foreground mb-3">Featured in</p>
+          <p className="text-lg text-muted-foreground mb-3">Recognized by Industry Leaders</p>
           <div className="flex flex-wrap justify-center items-center gap-8 md:gap-12">
-            {['Forbes', 'TechCrunch', 'Inc.', 'Bloomberg', 'CNBC'].map((company, index) => (
-              <div key={index} className="text-xl md:text-2xl font-semibold text-muted-foreground/50">
+            {['Forbes', 'TechCrunch', 'Inc.', 'Bloomberg', 'Fast Company'].map((company, index) => (
+              <div key={index} className="text-xl md:text-2xl font-bold text-muted-foreground/50 hover:text-violet-600/50 transition-colors">
                 {company}
               </div>
             ))}
