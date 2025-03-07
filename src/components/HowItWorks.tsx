@@ -32,23 +32,23 @@ const HowItWorks = () => {
   const steps = [
     {
       number: "01",
-      title: "Connect your accounts",
-      description: "Securely link your bank accounts, credit cards, and financial platforms to SmartLedger."
+      title: "Connect",
+      description: "Securely link your accounts with a single tap. SmartLedger handles the rest with complete privacy."
     },
     {
       number: "02",
-      title: "AI analyzes your data",
-      description: "Our intelligent system processes your transactions, learns your patterns, and establishes your financial baseline."
+      title: "Analyze",
+      description: "Watch as our intelligence engine processes your data, learns your patterns, and builds your financial profile."
     },
     {
       number: "03",
-      title: "Review smart insights",
-      description: "Receive customized financial insights, tax optimization suggestions, and cost-saving opportunities."
+      title: "Discover",
+      description: "Receive personalized insights that reveal opportunities you never knew existed in your financial landscape."
     },
     {
       number: "04",
-      title: "Take informed action",
-      description: "Make strategic decisions with confidence, backed by data-driven recommendations and intelligent forecasting."
+      title: "Transform",
+      description: "Make confident decisions backed by intelligent forecasting and clear, actionable recommendations."
     }
   ];
 
@@ -59,13 +59,13 @@ const HowItWorks = () => {
           <div className="space-y-8" ref={sectionRef}>
             <div>
               <span className="inline-block px-3 py-1 rounded-full bg-primary/10 text-primary text-sm font-medium mb-6">
-                Simplified Process
+                Seamless Experience
               </span>
               <h2 className="text-3xl md:text-4xl font-semibold mb-6">
-                How SmartLedger transforms your accounting
+                Accounting that works the way you think
               </h2>
               <p className="text-muted-foreground text-lg">
-                Experience a seamless transition to intelligent financial management with our intuitive platform.
+                An intuitive experience that feels familiar from the moment you begin, designed around how you naturally work.
               </p>
             </div>
 
@@ -88,16 +88,16 @@ const HowItWorks = () => {
             <div className="relative rounded-2xl overflow-hidden">
               <div className="glass-panel rounded-2xl overflow-hidden p-1 bg-white/80">
                 <div className="bg-white rounded-xl overflow-hidden p-8">
-                  <h3 className="text-2xl font-semibold mb-6">Unlock the potential of AI accounting</h3>
+                  <h3 className="text-2xl font-semibold mb-6">The SmartLedger difference</h3>
                   
                   <div className="space-y-4 mb-8">
                     {[
-                      "Reduce accounting costs by up to 60%",
-                      "Eliminate manual data entry errors",
-                      "Save 15+ hours per week on bookkeeping",
-                      "Receive actionable financial insights",
-                      "Ensure tax compliance with automated checks",
-                      "Access real-time financial reporting"
+                      "60% reduction in accounting workload",
+                      "Zero manual data entry required",
+                      "15+ hours saved every week",
+                      "Insights that grow your business",
+                      "Tax compliance, automatically verified",
+                      "Your financial data, when you need it"
                     ].map((benefit, index) => (
                       <div key={index} className="flex items-start gap-3">
                         <div className="flex-shrink-0 w-5 h-5 rounded-full bg-primary/10 flex items-center justify-center mt-0.5">
@@ -123,7 +123,7 @@ const HowItWorks = () => {
                     </div>
                     <div className="ml-4">
                       <p className="text-sm font-medium">Trusted by 1,200+</p>
-                      <p className="text-xs text-muted-foreground">Financial professionals worldwide</p>
+                      <p className="text-xs text-muted-foreground">Businesses worldwide</p>
                     </div>
                   </div>
                 </div>

@@ -13,23 +13,23 @@ interface TestimonialProps {
 
 const testimonials: TestimonialProps[] = [
   {
-    content: "SmartLedger has completely transformed how we handle our finances. The AI-powered insights have helped us identify cost-saving opportunities we never would have found manually.",
+    content: "SmartLedger transformed our financial workflow completely. What used to take days now happens in minutes, with insights we never thought possible.",
     author: "Sarah Johnson",
     position: "CFO",
     company: "Novus Technologies",
     imageUrl: "https://randomuser.me/api/portraits/women/23.jpg"
   },
   {
-    content: "As a small business owner, I was spending 15+ hours a week on accounting tasks. With SmartLedger, that's down to less than 2 hours. The automation is simply incredible.",
+    content: "The simplicity is deceptive. Behind the beautiful interface is incredible power that has completely changed how I understand my company's finances.",
     author: "Michael Chen",
     position: "Founder",
     company: "Brite Solutions",
     imageUrl: "https://randomuser.me/api/portraits/men/54.jpg"
   },
   {
-    content: "The predictive analytics feature has been a game-changer for our financial planning. We can now forecast with remarkable accuracy and prepare for future challenges.",
+    content: "I've never seen anything like it. SmartLedger's predictive capabilities are almost uncanny in their accuracy, helping us navigate financial decisions with confidence.",
     author: "Emily Rodriguez",
-    position: "Financial Director",
+    position: "Director of Finance",
     company: "Altura Partners",
     imageUrl: "https://randomuser.me/api/portraits/women/45.jpg"
   }
@@ -104,13 +104,13 @@ const Testimonials = () => {
         <div className="flex flex-col md:flex-row justify-between items-start md:items-end mb-12">
           <div className="max-w-2xl mb-6 md:mb-0">
             <span className="inline-block px-3 py-1 rounded-full bg-primary/10 text-primary text-sm font-medium mb-6">
-              Customer Testimonials
+              What People Are Saying
             </span>
             <h2 className="text-3xl md:text-4xl font-semibold mb-4">
-              Trusted by financial professionals worldwide
+              Loved by businesses everywhere
             </h2>
             <p className="text-muted-foreground text-lg">
-              See how SmartLedger has transformed financial management for businesses of all sizes.
+              Discover how SmartLedger is changing the way companies understand and interact with their finances.
             </p>
           </div>
           
@@ -150,7 +150,7 @@ const Testimonials = () => {
         </div>
 
         <div className="mt-12 text-center">
-          <p className="text-lg text-muted-foreground mb-3">Trusted by industry leaders</p>
+          <p className="text-lg text-muted-foreground mb-3">Featured in</p>
           <div className="flex flex-wrap justify-center items-center gap-8 md:gap-12">
             {['Forbes', 'TechCrunch', 'Inc.', 'Bloomberg', 'CNBC'].map((company, index) => (
               <div key={index} className="text-xl md:text-2xl font-semibold text-muted-foreground/50">

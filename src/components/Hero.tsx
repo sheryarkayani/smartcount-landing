@@ -37,11 +37,11 @@ const Hero = () => {
           <div className="lg:col-span-3 space-y-8" ref={heroRef}>
             <div>
               <h1 className="text-4xl md:text-5xl lg:text-6xl font-semibold leading-tight tracking-tight text-foreground">
-                Think Different.<br />
-                <span className="text-primary">With SmartLedger.</span>
+                Accounting.<br />
+                <span className="text-primary">Reimagined.</span>
               </h1>
               <p className="mt-6 text-lg md:text-xl text-muted-foreground max-w-xl">
-                Beautifully simple. Extraordinarily powerful. SmartLedger transforms financial management with elegant AI precision.
+                Beautifully intuitive. Remarkably intelligent. SmartLedger transforms the way you work with numbers, so you can focus on what truly matters.
               </p>
             </div>
             
@@ -58,15 +58,15 @@ const Hero = () => {
             <div className="flex flex-wrap gap-x-8 gap-y-4 pt-2 text-sm text-muted-foreground">
               <div className="flex items-center">
                 <ShieldCheck className="mr-2 h-5 w-5 text-primary" />
-                <span>Bank-level security</span>
+                <span>Advanced security</span>
               </div>
               <div className="flex items-center">
                 <Cog className="mr-2 h-5 w-5 text-primary" />
-                <span>Automated reconciliation</span>
+                <span>Intelligent automation</span>
               </div>
               <div className="flex items-center">
                 <BarChart3 className="mr-2 h-5 w-5 text-primary" />
-                <span>Predictive analytics</span>
+                <span>Insightful analytics</span>
               </div>
             </div>
           </div>
@@ -77,8 +77,8 @@ const Hero = () => {
               <div className="glass-panel rounded-3xl overflow-hidden p-1">
                 <div className="bg-white rounded-2xl overflow-hidden">
                   <img 
-                    src="https://images.unsplash.com/photo-1551288049-bebda4e38f71?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=2070&q=80" 
-                    alt="SmartLedger Dashboard" 
+                    src="https://images.unsplash.com/photo-1531297484001-80022131f5a1?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=2070&q=80" 
+                    alt="SmartLedger Interface" 
                     className="w-full h-auto rounded-2xl object-cover aspect-[4/3]"
                     loading="lazy"
                   />
@@ -86,14 +86,14 @@ const Hero = () => {
               </div>
               
               <div className="absolute top-6 -right-12 glass-card rounded-xl p-4 shadow-lg animate-float z-20">
-                <div className="text-sm font-medium">Monthly Revenue</div>
+                <div className="text-sm font-medium">Revenue</div>
                 <div className="text-xl font-semibold text-primary">$42,580</div>
-                <div className="text-xs text-green-600 font-medium">+12.3% from last month</div>
+                <div className="text-xs text-green-600 font-medium">+12.3%</div>
               </div>
               
               <div className="absolute -bottom-4 -left-8 glass-card rounded-xl p-4 shadow-lg animate-float animation-delay-1000 z-20">
-                <div className="text-sm font-medium">AI Insights</div>
-                <div className="text-xs text-muted-foreground">Expense optimization potential</div>
+                <div className="text-sm font-medium">AI Insight</div>
+                <div className="text-xs text-muted-foreground">Optimization potential</div>
                 <div className="text-xl font-semibold text-primary mt-1">$3,450</div>
               </div>
             </div>

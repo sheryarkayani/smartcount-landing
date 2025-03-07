@@ -45,7 +45,7 @@ const Navbar = () => {
               Sign In
             </Button>
             <Button className="rounded-full bg-primary text-white hover:bg-primary/90 transition-all">
-              Get Started
+              Try Free
             </Button>
           </div>
 
@@ -71,7 +71,7 @@ const Navbar = () => {
                   Sign In
                 </Button>
                 <Button className="w-full justify-center rounded-full bg-primary text-white hover:bg-primary/90">
-                  Get Started
+                  Try Free
                 </Button>
               </div>
             </div>

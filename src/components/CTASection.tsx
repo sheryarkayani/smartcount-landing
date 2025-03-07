@@ -36,55 +36,55 @@ const CTASection = () => {
         <div ref={sectionRef}>
           <div className="text-center max-w-3xl mx-auto mb-12">
             <span className="inline-block px-3 py-1 rounded-full bg-primary/10 text-primary text-sm font-medium mb-6">
-              Ready to Transform Your Accounting?
+              Choose Your Plan
             </span>
             <h2 className="text-3xl md:text-4xl font-semibold mb-6">
-              Start your journey to intelligent financial management
+              Accounting that fits your business perfectly
             </h2>
             <p className="text-muted-foreground text-lg">
-              Choose the plan that fits your business needs and take control of your financial future.
+              Simple, transparent pricing that scales with your needs. No hidden fees, no surprises.
             </p>
           </div>
           
           <div className="grid grid-cols-1 md:grid-cols-3 gap-8">
             {[
               {
-                name: "Starter",
+                name: "Essential",
                 price: "$29",
-                description: "Perfect for freelancers and small businesses",
+                description: "Everything you need to get started",
                 features: [
-                  "AI-powered transaction categorization",
-                  "Basic financial reporting",
-                  "Connect up to 2 accounts",
-                  "Email support"
+                  "Intelligent transaction categorization",
+                  "Essential financial reports",
+                  "Connect 2 financial accounts",
+                  "24/7 email support"
                 ]
               },
               {
                 name: "Professional",
                 price: "$79",
-                description: "Ideal for growing businesses",
+                description: "Advanced features for growing businesses",
                 featured: true,
                 features: [
-                  "Everything in Starter, plus:",
+                  "Everything in Essential, plus:",
                   "Advanced financial insights",
-                  "Tax optimization suggestions",
+                  "Tax optimization intelligence",
                   "Connect up to 10 accounts",
                   "Priority support",
-                  "Custom report builder"
+                  "Custom reporting tools"
                 ]
               },
               {
-                name: "Enterprise",
+                name: "Business",
                 price: "$199",
-                description: "For established businesses with complex needs",
+                description: "Complete solution for established companies",
                 features: [
                   "Everything in Professional, plus:",
-                  "Dedicated account manager",
-                  "API access",
+                  "Dedicated account specialist",
+                  "API access for custom integration",
                   "Unlimited accounts",
-                  "Custom integrations",
-                  "Advanced forecasting models",
-                  "Team collaboration tools"
+                  "Custom workflows",
+                  "Advanced forecasting",
+                  "Team collaboration"
                 ]
               }
             ].map((plan, index) => (
@@ -144,7 +144,7 @@ const CTASection = () => {
           </div>
           
           <div className="mt-12 text-center">
-            <p className="text-muted-foreground">Need a custom solution? <a href="#" className="text-primary hover:underline">Contact our sales team</a></p>
+            <p className="text-muted-foreground">Need a custom solution? <a href="#" className="text-primary hover:underline">Contact our team</a></p>
           </div>
         </div>
       </div>
